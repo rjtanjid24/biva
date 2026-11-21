@@ -1,73 +1,27 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>৪০৪ | পেজটি পাওয়া যায়নি | Page not found | Saima Biva</title>
-<meta name="robots" content="noindex, follow">
-<meta name="description" content="পেজটি পাওয়া যায়নি। Page not found.">
-<meta name="theme-color" content="#f6f1e7">
-<link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600&family=Noto+Serif+Bengali:wght@500;700&family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>404 | সাইমা বিভা / Saima Biva</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<header class="site-header">
-  <div class="wrap bar">
-    <a class="logo" href="/" data-home>সাইমা বিভা<span>.</span></a>
-    <div class="right">
-      <button class="lang" id="lang-btn" type="button" style="background:none;cursor:pointer">English</button>
+<body class="bg-[#faf7f2] text-[#1f1d1b] min-h-screen flex items-center justify-center px-5">
+  <div class="max-w-lg w-full bg-white border border-[#e5ddd0] rounded-2xl p-8 text-center space-y-5">
+    <p class="text-xs font-bold uppercase tracking-widest text-[#a64b2a]">404</p>
+    <h1 class="text-2xl sm:text-3xl font-bold">পৃষ্ঠাটি খুঁজে পাওয়া যায়নি / Page Not Found</h1>
+    <p class="text-sm text-[#57524c] leading-relaxed">
+      আপনি যে ঠিকানাটি খুঁজছেন সেটি হয়তো সরানো হয়েছে বা আর নেই। মূল পোর্টফোলিও পাতা বা নির্দিষ্ট সেকশনে ফিরে যান।
+    </p>
+    <div class="flex flex-wrap justify-center gap-3 pt-2">
+      <a href="index.html" class="px-5 py-2.5 rounded-md bg-[#a64b2a] text-white text-sm font-semibold hover:bg-[#7d341a] transition">Home / হোম</a>
+      <a href="index.html#writing" class="px-5 py-2.5 rounded-md border border-[#d8cfc0] text-sm font-semibold hover:border-[#a64b2a] transition">Writing / লেখালেখি</a>
+      <a href="index.html#voice" class="px-5 py-2.5 rounded-md border border-[#d8cfc0] text-sm font-semibold hover:border-[#a64b2a] transition">Voice / কণ্ঠস্বর</a>
+      <a href="index.html#contact" class="px-5 py-2.5 rounded-md border border-[#d8cfc0] text-sm font-semibold hover:border-[#a64b2a] transition">Contact / যোগাযোগ</a>
     </div>
   </div>
-</header>
-<main>
-  <div class="wrap nf">
-    <div>
-      <div class="big" aria-hidden="true">404</div>
-
-      <div data-l="bn">
-        <h1 class="sec-title">পেজটি খুঁজে পাওয়া যায়নি</h1>
-        <p class="sec-intro">আপনি যে ঠিকানাটি খুঁজছেন সেটি সরানো হয়েছে, মুছে গেছে, কিংবা লিংকে ভুল আছে। নিচের লিংক থেকে এগিয়ে যেতে পারেন।</p>
-        <a class="btn" href="/">হোমে ফিরুন</a>
-        <nav aria-label="গুরুত্বপূর্ণ অংশ">
-          <a class="link" href="/#writing">লেখা</a><a class="link" href="/#travel">ভ্রমণ</a><a class="link" href="/#voice">কণ্ঠ</a><a class="link" href="/#listen">শুনুন</a><a class="link" href="/#contact">যোগাযোগ</a>
-        </nav>
-      </div>
-
-      <div data-l="en" hidden>
-        <h1 class="sec-title">Page not found</h1>
-        <p class="sec-intro">The address you were looking for may have moved, been removed, or contain a typo. These links will get you back on track.</p>
-        <a class="btn" href="/en/">Back to home</a>
-        <nav aria-label="Important sections">
-          <a class="link" href="/en/#writing">Writing</a><a class="link" href="/en/#travel">Travel</a><a class="link" href="/en/#voice">Voice</a><a class="link" href="/en/#listen">Listen</a><a class="link" href="/en/#contact">Contact</a>
-        </nav>
-      </div>
-    </div>
-  </div>
-</main>
-<script>
-(function () {
-  var btn = document.getElementById('lang-btn');
-  var home = document.querySelector('[data-home]');
-  function set(l) {
-    document.documentElement.lang = l;
-    document.querySelectorAll('[data-l]').forEach(function (n) { n.hidden = n.getAttribute('data-l') !== l; });
-    btn.textContent = l === 'bn' ? 'English' : 'বাংলা';
-    btn.setAttribute('aria-label', l === 'bn' ? 'Switch to English' : 'বাংলায় দেখুন');
-    home.setAttribute('href', l === 'bn' ? '/' : '/en/');
-    document.title = l === 'bn' ? '৪০৪ | পেজটি পাওয়া যায়নি | সাইমা বিভা' : '404 | Page not found | Saima Biva';
-  }
-  var l = /^\/en(\/|$)/.test(location.pathname) ? 'en' : 'bn';
-  try { l = localStorage.getItem('sb-lang') || l; } catch (e) {}
-  set(l === 'en' ? 'en' : 'bn');
-  btn.addEventListener('click', function () {
-    var n = document.documentElement.lang === 'bn' ? 'en' : 'bn';
-    try { localStorage.setItem('sb-lang', n); } catch (e) {}
-    set(n);
-  });
-})();
-</script>
 </body>
 </html>
