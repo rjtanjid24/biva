@@ -1,1 +1,87 @@
+/* Editorial design system for Saima Biva */
+:root {
+  --bg-ivory: #faf7f2;
+  --bg-surface: #ffffff;
+  --bg-muted: #f2ece2;
+  --ink-primary: #1f1d1b;
+  --ink-secondary: #57524c;
+  --ink-muted: #7a736b;
+  --accent-terracotta: #a64b2a;
+  --accent-terracotta-dark: #7d341a;
+  --accent-terracotta-soft: #f7eae4;
+  --accent-clay: #8c5a3c;
+  --border-subtle: #e5ddd0;
+  --font-bn: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+  --font-en: 'DM Sans', 'Inter', sans-serif;
+  --font-serif-en: 'Playfair Display', Georgia, serif;
+}
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-ivory);
+  color: var(--ink-primary);
+}
+
+body {
+  background-color: var(--bg-ivory);
+  color: var(--ink-primary);
+  font-family: var(--font-bn);
+  overflow-x: hidden;
+  margin: 0;
+}
+
+body.lang-en {
+  font-family: var(--font-en);
+}
+
+.font-editorial-en {
+  font-family: var(--font-serif-en);
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.reveal-ready .reveal:not(.is-visible) {
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-link.active {
+  color: var(--accent-terracotta);
+  font-weight: 600;
+}
+
+.audio-progress-track {
+  height: 6px;
+  border-radius: 999px;
+  background-color: #e4dcd0;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.audio-progress-fill {
+  height: 100%;
+  background-color: var(--accent-terracotta);
+  width: 0%;
+  transition: width 0.12s linear;
+}
