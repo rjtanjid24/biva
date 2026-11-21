@@ -1,0 +1,30 @@
+{
+  "_help": "Add a destination by copying an object. image is optional (path under assets/images/). status_* is optional.",
+  "destinations": [
+    {
+      "id": "oman",
+      "name": "Oman",
+      "name_bn": "ওমান",
+      "name_en": "Oman",
+      "status_bn": "সাম্প্রতিক ভ্রমণ",
+      "status_en": "Recent trip",
+      "text_bn": null,
+      "text_en": null,
+      "image": "https://cdn.jagonews24.com/media/imgAllNew/BG/2023March/oman-tour-bibha-mvgn1hg7c0g8hnr-20261020181655.jpg?w=1200",
+      "image_alt_bn": "ওমান ভ্রমণের ছবি",
+      "image_alt_en": "Photo from the Oman trip",
+      "url": "https://www.jagonews24.com/travel/article/1170282"
+    },
+    {
+      "id": "country-spot",
+      "name": "Country Spot",
+      "name_bn": "Country Spot",
+      "name_en": "Country Spot",
+      "status_bn": null,
+      "status_en": null,
+      "text_bn": null,
+      "text_en": null,
+      "image": null
+    }
+  ]
+}

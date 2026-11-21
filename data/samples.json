@@ -1,0 +1,41 @@
+{
+  "_help": "Auto-managed by scripts/generate-samples.js. Edit titles and descriptions freely; the script keeps your edits and only adds new files.",
+  "samples": [
+    {
+      "file": "voice-news.mp3",
+      "title_bn": "সংবাদ পাঠ",
+      "title_en": "News reading",
+      "description_bn": "আপডেট টিভি",
+      "description_en": "Update TV",
+      "category": "news",
+      "order": 1
+    },
+    {
+      "file": "voice-ad.mp3",
+      "title_bn": "বিজ্ঞাপন (ওভিসি)",
+      "title_en": "Commercial (OVC)",
+      "description_bn": "শিক্ষা প্রতিষ্ঠান",
+      "description_en": "Educational institution",
+      "category": "commercial",
+      "order": 2
+    },
+    {
+      "file": "voice-ivr.mp3",
+      "title_bn": "আইভিআর / কলার টিউন",
+      "title_en": "IVR / caller tune",
+      "description_bn": "ওয়েলকাম মেসেজ",
+      "description_en": "Welcome message",
+      "category": "ivr",
+      "order": 3
+    },
+    {
+      "file": "voice-poem.mp3",
+      "title_bn": "কবিতা আবৃত্তি: বসন্ত নয়, অবহেলা",
+      "title_en": "Poetry recitation: Boshonto noy, obohela",
+      "description_bn": "আবৃত্তি",
+      "description_en": "Recitation",
+      "category": "recitation",
+      "order": 4
+    }
+  ]
+}
